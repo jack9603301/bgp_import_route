@@ -24,7 +24,7 @@ def get_ips(ASN_set, type):
 def main():
     ips = get_ips([15169,36459,54113,32934,3356,62041,4826,16276,22611,19679,34282,16509,8075,14061,58182,64050,38197,206281,34240,13414,13335,24940,24572,23816,20446],"ipv4")
     values =  json.dumps(ips, sort_keys=True, indent=4, separators=(',', ': '))
-    print(values)
+    #print(values)
     
     print("INSTALL ROUTE>")
     for key,value in ips.items():
