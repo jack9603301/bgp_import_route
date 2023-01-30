@@ -31,7 +31,7 @@ def main():
         ASN = key
         for dict in value:
             prefix = dict["prefix"]
-            print(f"ip route {prefix} enp1s0 label AS{ASN}")
+            print(f"ip route {prefix} enp1s0")
 
 if __name__ == "__main__":
     main()
