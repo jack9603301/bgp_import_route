@@ -1,16 +1,16 @@
-sudo ip route add 149.154.160.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 149.154.164.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 149.154.168.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 149.154.172.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 205.172.60.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 67.198.55.0/24 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.12.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.16.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.20.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.20.0/23 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.4.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.56.0/23 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.56.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 91.108.8.0/22 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 172.217.0.0/16 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
-sudo ip route add 142.250.0.0/15 nexthop via 192.168.20.2 dev tun0 weight 1 nexthop via 192.168.40.2 dev tun1 weight 1
+sudo ip route add 149.154.160.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 149.154.164.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 149.154.168.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 149.154.172.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 205.172.60.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 67.198.55.0/24 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.12.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.16.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.20.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.20.0/23 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.4.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.56.0/23 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.56.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 91.108.8.0/22 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 172.217.0.0/16 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
+sudo ip route add 142.250.0.0/15 nexthop via 192.168.20.1 weight 1 nexthop via 192.168.40.1 weight 1
