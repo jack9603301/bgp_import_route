@@ -4,7 +4,6 @@ import subprocess
 import threading
 
 def is_reachable(ip):
-    #只发送1个ECHO_REQUEST包
     if subprocess.call(["ping", "-W", "1", "-c", "1", ip])==0:
         return True
     else:
