@@ -15493,3 +15493,5 @@ sudo ip route add 91.108.56.0/22 nexthop via 192.168.20.1 weight 100 nexthop via
 sudo ip route add 91.108.8.0/22 nexthop via 192.168.20.1 weight 100 nexthop via 192.168.40.1 weight 1
 sudo ip route add 172.217.0.0/16 nexthop via 192.168.20.1 weight 100 nexthop via 192.168.40.1 weight 1
 sudo ip route add 142.250.0.0/15 nexthop via 192.168.20.1 weight 100 nexthop via 192.168.40.1 weight 1
+
+sudo /config/scripts/vyos_check_icmp_overlay_bfd.py >/dev/null 2>&1 &
