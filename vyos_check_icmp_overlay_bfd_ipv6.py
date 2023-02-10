@@ -11,16 +11,16 @@ def is_reachable(ip):
         return False
 
 def loop_main():
-    if(is_reachable("192.168.10.1") == False):
-        subprocess.call(["ip", "link", "set", "dev", "tun0", "down"])
+    if(is_reachable("fc00:320:f1cd:2::1") == False):
+        subprocess.call(["ip", "link", "set", "dev", "tun2", "down"])
         #You must exit first to ensure that the routing table is not cleared when multiple redundancy is invalid
         return
     else:
-        subprocess.call(["ip", "link", "set", "dev", "tun0", "up"])
-    if(is_reachable("192.168.30.1") == False):
-        subprocess.call(["ip", "link", "set", "dev", "tun1", "down"])
+        subprocess.call(["ip", "link", "set", "dev", "tun2", "up"])
+    if(is_reachable("fc00:330:f1cd:2::1") == False):
+        subprocess.call(["ip", "link", "set", "dev", "tun3", "down"])
     else:
-        subprocess.call(["ip", "link", "set", "dev", "tun1", "up"])
+        subprocess.call(["ip", "link", "set", "dev", "tun3", "up"])
 
 if __name__ == "__main__":
     while True:
