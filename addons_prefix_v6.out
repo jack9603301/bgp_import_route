@@ -1,5 +1,5 @@
-sudo ip -6 route add 2001:67c:4e8::/48 proto static nexthop via fc00:320:f1cd:2::1 weight 100 nexthop via fc00:330:f1cd:2::1 weight 1
-sudo ip -6 route add 2001:b28:f23c::/48 proto static nexthop via fc00:320:f1cd:2::1 weight 100 nexthop via fc00:330:f1cd:2::1 weight 1
-sudo ip -6 route add 2001:b28:f23d::/48 proto static nexthop via fc00:320:f1cd:2::1 weight 100 nexthop via fc00:330:f1cd:2::1 weight 1
+ip route 2001:67c:4e8::/48 fc00:220:f2ed::1
+ip route 2001:b28:f23c::/48 fc00:220:f2ed::1
+ip route 2001:b28:f23d::/48 fc00:220:f2ed::1
 
 sudo /config/scripts/vyos_check_icmp_overlay_bfd_ipv6.py >/dev/null 2>&1 &

@@ -26,12 +26,12 @@ def main():
     values =  json.dumps(ips, sort_keys=True, indent=4, separators=(',', ': '))
     #print(values)
     
-    print("INSTALL ROUTE>")
+    print("(LXD eth0,fc00:220:f2ed::1) FRR INSTALL ROUTE>")
     for key,value in ips.items():
         ASN = key
         for dict in value:
             prefix = dict["prefix"]
-            print(f"ip -6 route add {prefix} proto static nexthop via fc00:320:f1cd:2::1 weight 100 nexthop via fc00:330:f1cd:2::1 weight 1")
+            print(f"ip route {prefix} fc00:220:f2ed::1")
 
 if __name__ == "__main__":
     main()
