@@ -31,7 +31,7 @@ def main():
         ASN = key
         for dict in value:
             prefix = dict["prefix"]
-            print(f"ip route {prefix} 10.20.245.1")
+            print(f"ip route add blackhole {prefix} table 3")
 
 if __name__ == "__main__":
     main()
